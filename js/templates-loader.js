@@ -24,7 +24,7 @@ $(function() {
     	/* 將所有 template.hbs 塞到 templateCaches 裡面 */
     	cacheTemplate: function(templates) {
 	    	$.each(templates, function( index, value) {
-	    		$.get('js/templates/'+ value + '.hbs').then(function(data) {    			
+	    		$.get('templates/'+ value + '.hbs').then(function(data) {    			
 	    			var o = {};
 	    			o[value] = data;
 	    			$.extend(templateCaches, o);
