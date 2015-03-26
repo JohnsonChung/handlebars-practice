@@ -1,6 +1,6 @@
 $(function() {
     var templates = [
-        "templateBody","sideNav","about", "campaign", "concept", "faq", "howto", "privacy", "recruit", "recruitForm", "service", "shop"
+        "pageA","pageB","pageC"
     ];
     var templateCaches = {};
 
@@ -8,10 +8,10 @@ $(function() {
     var $main = $('#main');
     var $side = $('#side');
 
-    $.get('js/templates/concept.hbs').then(function(data) {    	
+    $.get('js/templates/contents.hbs').then(function(data) {    	
         $main.html(Handlebars.compile(data));
     });
-    $.get('js/templates/sideNav.hbs').then(function(data) {    	
+    $.get('js/templates/nav.hbs').then(function(data) {    	
         $side.html(Handlebars.compile(data));
     });
 
