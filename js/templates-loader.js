@@ -8,10 +8,10 @@ $(function() {
     var $main = $('#main');
     var $side = $('#side');
 
-    $.get('js/templates/contents.hbs').then(function(data) {    	
+    $.get('templates/contents.hbs').then(function(data) {    	
         $main.html(Handlebars.compile(data));
     });
-    $.get('js/templates/nav.hbs').then(function(data) {    	
+    $.get('templates/nav.hbs').then(function(data) {    	
         $side.html(Handlebars.compile(data));
     });
 
